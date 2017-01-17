@@ -20,6 +20,15 @@ class primesTestCase(unittest.TestCase):
 	def test_if_six_not_a_prime(self):
 		"""checks if six is not a prime number"""
 		self.assertFalse(getPrimes(5))
+	def test_eight_is_not_a_prime(self):
+		""" checks if eight is not a prime number"""
+		self.assertFalse(getPrimes(8))
+	def test_twelve_is_not_a_prime(self):
+		"""checks that twelve is not a prime number"""
+		self.assertFalse(getPrimes(12))
+	def test_eleven_is_a_prime(self):
+		"""checks that eleven is a prime number"""
+		self.asserFalse(getPrimes(11))
 	
 if __name__ == '__main__':
 	unittest.main()
