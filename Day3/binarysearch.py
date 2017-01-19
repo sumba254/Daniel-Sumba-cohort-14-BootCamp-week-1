@@ -24,8 +24,10 @@ class BinarySearch(list):
 				else:
 					if c < self[middle]:
 						last = middle - 1
+						result['index'] = middle - 1
 					else:
 						first = midpoint + 1
+						result['index'] = middle + 1
 				result['count'] = count
 				count +=1
 			print result
