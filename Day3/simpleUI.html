@@ -1,0 +1,46 @@
+<!doctype htm>
+<html>
+	<head>
+		<title>Simple Calculator Interface</title>
+		<style>
+			form{
+				width: 300px;
+				padding: 5px;
+				border-radius: 4px;
+				background-color: #FFFFFF;
+				border: 1px solid;
+				margin: 0px auto;
+			}
+		
+			form .buttons-container{
+				text-align: center;
+				padding: 5px;
+			}
+			form .buttons-container > span{
+				padding: 5px 10px;
+				background-color: rgb(0, 255, 255);
+				margin: 0px 5px;
+				text-align: center;
+				box-sizing: border-box;
+				display: inline-block;
+				cursor: pointer;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<input type = "text" name = "first-number" placeholder = "First number">
+			<input type = "text" name = "second-number" placeholder = "Second number">
+			
+			<div class="buttons-container">
+				<span id = "multi">*</span>
+				<span id = "division">/</span>
+				<span id = "add">+</span>
+				<span id = "subtract">-</span>
+				<span id = "Clear">AC</span>
+			</div>
+			<input type ="submit" value ="Calculate">
+	</body>
+</html>
